@@ -1,19 +1,22 @@
 
 <template>
-  <BlogHeader title="今日着色器"></BlogHeader>
+  <BlogHeader title="今日着色器 | Today's Shader"></BlogHeader>
   <BlogCanvas></BlogCanvas>
+  <BlogInfo></BlogInfo>
 </template>
 
 <script>
 import BlogHeader from './components/BlogHeader.vue';
 import BlogCanvas from './components/BlogCanvas.vue';
+import BlogInfo from './components/BlogInfo.vue';
 
 export default {
   name: 'App',
   components: {
     BlogHeader,
-    BlogCanvas
-  }
+    BlogCanvas,
+    BlogInfo
+}
 }
 </script>
 
