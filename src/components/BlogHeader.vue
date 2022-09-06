@@ -16,7 +16,7 @@ export default {
 <style scoped>
 #outer_header {
     /* position: absolute; */
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: darkslategrey;
     color: white;
@@ -26,7 +26,7 @@ export default {
 }
 #inner_header {
     margin-left: 20px;
-    line-height: 50px;
+    line-height: 60px;
     font-size:x-large;
 }
 </style>

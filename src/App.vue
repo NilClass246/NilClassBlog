@@ -1,19 +1,19 @@
+
 <template>
-  <BlogHeader title="Blog"></BlogHeader>
-  <BlogPost title="Post1" desc="post description"></BlogPost>
-  <BlogPost title="Post2" desc="post description"></BlogPost>
+  <BlogHeader title="今日着色器"></BlogHeader>
+  <BlogCanvas></BlogCanvas>
 </template>
 
 <script>
 import BlogHeader from './components/BlogHeader.vue';
-import BlogPost from './components/BlogPost.vue';
+import BlogCanvas from './components/BlogCanvas.vue';
 
 export default {
   name: 'App',
   components: {
     BlogHeader,
-    BlogPost,
-}
+    BlogCanvas
+  }
 }
 </script>
 

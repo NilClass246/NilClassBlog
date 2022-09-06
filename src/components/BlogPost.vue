@@ -1,5 +1,6 @@
 <template>
     <div id="post_panel">
+        <img id="post_img" :src="image" v-if="image">
         <div class="content">
             <div id="post_title">{{title}}</div>
             <div id="post_desc">{{desc}}</div>
@@ -12,7 +13,8 @@ export default{
     name: "BlogPost",
     props: {
         title: String,
-        desc: String
+        desc: String,
+        image: String
     }
 }
 </script>
@@ -28,6 +30,7 @@ export default{
         7px 7px 12px rgba(0, 0, 0, .4),
         -7px -7px 12px rgba(255, 255, 255, .9);
     cursor: pointer;
+    padding: 10px;
 }
 
 #post_panel:hover{
@@ -38,8 +41,20 @@ export default{
 
 .content {
     /* flex: 0 0 auto; */
-    padding: 10px;
     overflow: hidden;
+}
+
+#post_img {
+    padding-right: 10px;
+}
+
+#post_title {
+    font-size: x-large;
+    /* font-weight: bold; */
+}
+
+#post_desc {
+    color: gray;
 }
 
 </style>
