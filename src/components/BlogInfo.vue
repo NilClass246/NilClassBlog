@@ -1,7 +1,6 @@
 <template>
     <div id="info_container">
-        <div id="info_content">
-            {{content}}
+        <div id="info_content" v-html="content">
         </div>
     </div>
 </template>
@@ -10,7 +9,7 @@
     export default{
         data(){
             return{
-                content:"Hello World级别的三角形，用webgl2绘制。"
+                content:"来自ShaderToy的美丽螺旋<br><br>Saturday Torus <br> Created By mrange <br> <a href='https://www.shadertoy.com/view/fd33zn'>https://www.shadertoy.com/view/fd33zn</a>"
             }
         }
     }
@@ -26,9 +25,9 @@
 #info_content{
     background: rgba(255, 255, 255, .8);
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
 }
 </style>
