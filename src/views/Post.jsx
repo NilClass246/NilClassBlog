@@ -1,19 +1,19 @@
 import { marked } from "marked";
 import { useState } from "react";
+import { useParams } from 'react-router-dom';
 
-function fetchPost(){
-    let target = "https://raw.githubusercontent.com/NilClass246/NilClassBlog/master/README.md?token=GHSAT0AAAAAACRWV6NVTKBQN3E6AROWULLMZRVPEJQ";
+function fetchPost(id){
+    let target = `https://raw.githubusercontent.com/NilClass246/NilClassBlog/master/src/data/${id}.md`;
     return fetch(target).then(res=>{
         return res.text();
     })
 }
 
 export default function Post() {
+    let { id } = useParams();
     const [post, setPost] = useState("Loading...");
-    fetchPost().then(res=>{
+    fetchPost(id).then(res=>{
         setPost(marked.parse(res));
-        // post = marked.parse(res);
-        // console.log(post);
     })
 
     return (

@@ -50,6 +50,11 @@ body {
   background-image: url("./assets/light-paper-fibers.png");
 }
 
+.bg-book{
+  background-image: url("./assets/book.jpg");
+  background-size: 100%;
+}
+
 .content{
   text-shadow: 0px -0.5px rgba(0,0,0,0.1),
   -0.5px -0.5px rgba(0,0,0,0.1),
