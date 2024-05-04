@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useParams } from 'react-router-dom';
 
 function fetchPost(id){
-    let target = `https://raw.githubusercontent.com/NilClass246/NilClassBlog/master/src/data/${id}.md`;
+    let target = `https://raw.githubusercontent.com/NilClass246/NilClassBlog/master/src/data/${id}.html`;
     return fetch(target).then(res=>{
         return res.text();
     })
